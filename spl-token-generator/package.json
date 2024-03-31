@@ -1,0 +1,46 @@
+{
+  "name": "frontend",
+  "version": "1.0.3",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build"
+  },
+  "dependencies": {
+    "@metaplex-foundation/js": "^0.20.1",
+    "@metaplex-foundation/mpl-token-metadata": "^2.13.0",
+    "@metaplex-foundation/umi": "^0.9.1",
+    "@metaplex-foundation/umi-bundle-defaults": "^0.9.1",
+    "@nextui-org/card": "^2.0.24",
+    "@nextui-org/react": "^2.2.10",
+    "@raydium-io/raydium-sdk": "^1.3.1-beta.48",
+    "@react-stately/data": "^3.11.2",
+    "@solana/spl-token": "^0.2.0",
+    "@solana/web3.js": "^1.90.0",
+    "axios": "^1.6.7",
+    "concat-stream": "^2.0.0",
+    "form-data": "^4.0.0",
+    "formidable": "^3.5.1",
+    "jito-ts": "^3.0.1",
+    "next": "^14.1.2",
+    "nft.storage": "^7.1.1",
+    "npm": "^10.4.0",
+    "primereact": "^10.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
+    "react-toastify": "^9.1.3",
+    "sass": "^1.45.1",
+    "unstated-next": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.38",
+    "autoprefixer": "^10.4.18",
+    "eslint": "8.5.0",
+    "eslint-config-next": "12.0.7",
+    "http-proxy-middleware": "^2.0.6",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "4.5.4"
+  }
+}

@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  backend:
+    build:
+      context: ./spl-gen-backend
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    depends_on:
+      - frontend
+    environment:
+      RPC_URL: "https://capable-wider-crater.solana-mainnet.quiknode.pro/99a1453d22d9c074ce25ac25f3a77dc63caf8d44/"
+
+  frontend:
+    build:
+      context: ./spl-token-generator
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    command: npm run dev
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: development
+      RPC_URL: "https://capable-wider-crater.solana-mainnet.quiknode.pro/99a1453d22d9c074ce25ac25f3a77dc63caf8d44/"
